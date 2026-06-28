@@ -51,11 +51,6 @@ export default function ImageCarousel({ images }: ImageCarouselProps) {
                 className="object-cover opacity-80"
                 sizes="(max-width: 768px) 100vw, 80vw"
               />
-              <div className="absolute inset-x-0 bottom-0 p-4 md:p-8 bg-gradient-to-t from-black/80 to-transparent">
-                <p className="text-white text-sm md:text-base italic text-center drop-shadow-md">
-                  {img.alt}
-                </p>
-              </div>
             </div>
           ))}
         </div>

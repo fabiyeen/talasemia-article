@@ -69,7 +69,7 @@ export default function ViewCounter() {
     return (
       <div className="flex items-center justify-center space-x-2 text-[var(--background)] mt-12 opacity-80 font-medium">
         <Eye className="w-5 h-5 animate-pulse" />
-        <span>Views: Loading...</span>
+        <span>Reads: Loading...</span>
       </div>
     );
   }
@@ -77,7 +77,7 @@ export default function ViewCounter() {
   return (
     <div className="flex items-center justify-center space-x-2 text-[var(--background)] mt-12 opacity-90 font-bold tracking-wide">
       <Eye className="w-5 h-5" />
-      <span>Total Views: {views}</span>
+      <span>Total Reads: {views}</span>
     </div>
   );
 }

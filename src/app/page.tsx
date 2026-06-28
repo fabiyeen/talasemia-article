@@ -9,11 +9,11 @@ export default function Home() {
     { src: "/images/2.jpg", alt: "Potret 2" },
     { src: "/images/3.jpg", alt: "Potret 3" },
     { src: "/images/4.jpg", alt: "Potret 4" },
-    { src: "/images/5.jpg", alt: "Potret 5" },
+    { src: "/images/5.jpeg", alt: "Potret 5" },
     { src: "/images/6.jpg", alt: "Potret 6" },
     { src: "/images/7.jpg", alt: "Potret 7" },
     { src: "/images/8.jpg", alt: "Potret 8" },
-    { src: "/images/9.jpg", alt: "Potret 9" },
+    { src: "/images/9.jpeg", alt: "Potret 9" },
     { src: "/images/10.jpg", alt: "Potret 10" },
     { src: "/images/11.jpg", alt: "Potret 11" }
   ];
@@ -64,7 +64,7 @@ export default function Home() {
           </h2>
         </FadeIn>
         
-        <div className="space-y-6 text-lg md:text-xl leading-relaxed">
+        <div className="space-y-6 text-lg md:text-xl leading-relaxed text-center">
           <FadeIn>
             <p>
               Siang itu, di ruang talasemia RSCM Kiara, Rani terlihat tergesa-gesa menggeledah tas jinjing besarnya. Di dalamnya, ada belasan makan siang pesanan teman-temannya, pasien talasemia mayor yang tengah menjalankan transfusi darah di ruangan itu. Proses transfusi darah memakan waktu 6-8 jam untuk 2 kantong darah yang masuk ke tubuh mereka setiap sesinya. Rani paham sulitnya mencari makan dengan infus yang menancap di tangan seharian. Oleh karena itu, hampir setiap minggunya, Rani membuka Pre-Order makanan dari wirausahanya yang sudah dimulai sejak 2021. Di sisi lain, karena Rani juga merupakan pasien talasemia mayor yang setiap 6 minggu sekali melakukan transfusi darah di tempat itu.
@@ -152,7 +152,7 @@ export default function Home() {
                 src="/images/limpa-bengkak.jpg" 
                 alt="Ukuran limpa stadium 5 (17cm) Rani saat diangkat."
                 fill
-                className="object-cover"
+                className="object-cover rotate-90"
               />
             </div>
             <p className="text-sm md:text-base text-center mt-4 opacity-75">
@@ -216,7 +216,7 @@ export default function Home() {
           </h2>
         </FadeIn>
 
-        <div className="space-y-6 text-lg md:text-xl leading-relaxed">
+        <div className="space-y-6 text-lg md:text-xl leading-relaxed text-center">
           <FadeIn>
             <div className="clearfix">
               Tahun 2009, Andrew kecil terbaring di salah satu bilik ruang IGD di Jakarta Barat. Di usia yang baru 2 tahun, tubuh kecilnya harus menerima tusukan jarum suntik. Tiga hari kemudian, Andrew akan pulang dengan dua kantong darah yang mengisi tubuhnya dan diagnosa talasemia beta mayor. Kini, 17 
@@ -326,7 +326,7 @@ export default function Home() {
           </h2>
         </FadeIn>
 
-        <div className="space-y-6 text-lg md:text-xl leading-relaxed">
+        <div className="space-y-6 text-lg md:text-xl leading-relaxed text-center">
           <FadeIn>
             <p>
               Mencari tahu lebih mengenai talasemia secara medis, konteks penyebaran, dan situasinya di Indonesia, Prof. Dr. dr. Pustika Amalia Wahidiyat, Sp.A(K), Subsp. HO., lebih akrab dipanggil Prof. Lia, menjadi sosok yang tepat. Selama 30 tahun beliau mendedikasikan pelayanannya di bidang hematologi (penyakit darah) dan onkologi (kanker). Kini, Prof. Lia adalah salah satu pakar utama talasemia di Indonesia.
@@ -346,12 +346,13 @@ export default function Home() {
           </FadeIn>
 
           <FadeIn className="my-12">
-            <div className="relative w-full aspect-video rounded-xl overflow-hidden bg-black/10">
+            <div className="relative w-full rounded-xl overflow-hidden bg-black/10">
               <Image 
                 src="/images/skema-genetik.png" 
                 alt="Skema penurunan gen talasemia pada anak."
-                fill
-                className="object-contain"
+                width={1200}
+                height={800}
+                className="w-full h-auto object-contain"
               />
             </div>
             <p className="text-sm md:text-base text-center mt-4 opacity-75">
@@ -372,12 +373,13 @@ export default function Home() {
           </FadeIn>
 
           <FadeIn className="my-12">
-            <div className="relative w-full aspect-[4/5] md:aspect-video rounded-xl overflow-hidden bg-black/10">
+            <div className="relative w-full rounded-xl overflow-hidden bg-black/10">
               <Image 
                 src="/images/info-prev.png" 
                 alt="Infografik Prevalensi Pengidap Talasemia di Indonesia"
-                fill
-                className="object-contain"
+                width={1200}
+                height={800}
+                className="w-full h-auto object-contain"
               />
             </div>
             <p className="text-sm md:text-base text-center mt-4 opacity-75">
@@ -398,12 +400,13 @@ export default function Home() {
           </FadeIn>
 
           <FadeIn className="my-12">
-            <div className="relative w-full aspect-video rounded-xl overflow-hidden bg-black/10">
+            <div className="relative w-full rounded-xl overflow-hidden bg-black/10">
               <Image 
                 src="/images/infografik-biaya.png" 
                 alt="Infografik jumlah pengeluaran pengidap talasemia dan klaim manfaat talasemia BPJS Kesehatan"
-                fill
-                className="object-contain"
+                width={1200}
+                height={800}
+                className="w-full h-auto object-contain"
               />
             </div>
             <p className="text-sm md:text-base text-center mt-4 opacity-75">
@@ -465,7 +468,7 @@ export default function Home() {
           </h2>
         </FadeIn>
 
-        <div className="space-y-6 text-lg md:text-xl leading-relaxed">
+        <div className="space-y-6 text-lg md:text-xl leading-relaxed text-center">
           <FadeIn className="mb-12">
             <div className="relative w-full aspect-video rounded-xl overflow-hidden bg-black/10">
               <Image 
@@ -515,6 +518,9 @@ export default function Home() {
       {/* CAROUSEL SECTION */}
       <FadeIn>
         <ImageCarousel images={carouselImages} />
+        <p className="text-sm opacity-80 text-center mt-4">
+          Sejumlah kegiatan dan pencapaian Rani & Andrew
+        </p>
       </FadeIn>
 
       {/* SECTION 5 */}
@@ -525,7 +531,7 @@ export default function Home() {
           </h2>
         </FadeIn>
 
-        <div className="space-y-6 text-lg md:text-xl leading-relaxed">
+        <div className="space-y-6 text-lg md:text-xl leading-relaxed text-center">
           <FadeIn className="mb-12">
             <div className="relative w-full aspect-video rounded-xl overflow-hidden bg-black/10">
               <Image 
@@ -590,7 +596,7 @@ export default function Home() {
           </h2>
         </FadeIn>
 
-        <div className="space-y-6 text-lg md:text-xl leading-relaxed">
+        <div className="space-y-6 text-lg md:text-xl leading-relaxed text-center">
           <FadeIn className="mb-12">
             <div className="relative w-full aspect-video rounded-xl overflow-hidden bg-black/10">
               <Image 
@@ -690,7 +696,7 @@ export default function Home() {
           </h2>
         </FadeIn>
 
-        <div className="space-y-6 text-lg md:text-xl leading-relaxed">
+        <div className="space-y-6 text-lg md:text-xl leading-relaxed text-center">
           <FadeIn>
             <p>
               Pada akhirnya, hidup dengan talasemia mayor adalah tentang menerima seluruh keterbatasan menjadi bagian dari jati diri. Seperti pesan Prof. Lia untuk tidak menjadikan talasemia sebagai musuh, melainkan teman belajar berkembang. Bagi Rani, kuncinya adalah penerimaan secara medis. Cari tahu berbagai hal mengenai kondisimu, cari relasi, upaya yang akhirnya mempertemukannya dengan TM, pintu sosial dan pengembangan dirinya. Ketika satu pintu tertutup, cari dan buka pintu lainnya. Rani sadar la diberi sakit karena la mampu melaluinya. Oleh karena itu, berusahalah hingga batas akhir karena pasti akan ada jalannya.
@@ -747,28 +753,32 @@ export default function Home() {
           {/* Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-10 gap-x-8">
             <div>
-              <p className="text-[10px] md:text-xs tracking-widest uppercase opacity-60 mb-2 font-bold">Writer</p>
-              <p className="font-bold text-sm md:text-base">Anginette Yoni</p>
+              <p className="text-[10px] md:text-xs tracking-widest uppercase opacity-60 mb-2 font-bold">Penulis</p>
+              <p className="font-bold text-sm md:text-base">Michelle Aurelia</p>
             </div>
             <div>
-              <p className="text-[10px] md:text-xs tracking-widest uppercase opacity-60 mb-2 font-bold">Researcher</p>
-              <p className="font-bold text-sm md:text-base">Anginette Yoni</p>
+              <p className="text-[10px] md:text-xs tracking-widest uppercase opacity-60 mb-2 font-bold">Riset</p>
+              <p className="font-bold text-sm md:text-base">Michelle Aurelia</p>
             </div>
             <div>
               <p className="text-[10px] md:text-xs tracking-widest uppercase opacity-60 mb-2 font-bold">Editor</p>
-              <p className="font-bold text-sm md:text-base">Anginette Yoni, Darren Antonio</p>
+              <p className="font-bold text-sm md:text-base">Michelle Aurelia</p>
             </div>
             <div>
-              <p className="text-[10px] md:text-xs tracking-widest uppercase opacity-60 mb-2 font-bold">Video Director</p>
-              <p className="font-bold text-sm md:text-base">Anginette Yoni, Darren Antonio</p>
+              <p className="text-[10px] md:text-xs tracking-widest uppercase opacity-60 mb-2 font-bold">Media</p>
+              <p className="font-bold text-sm md:text-base">
+                Michelle Aurelia (Foto & Infografik)<br/>
+                Tri Rani (Foto)<br/>
+                Andrew Rasel Gautama (Foto)
+              </p>
             </div>
             <div>
-              <p className="text-[10px] md:text-xs tracking-widest uppercase opacity-60 mb-2 font-bold">Video Editor</p>
-              <p className="font-bold text-sm md:text-base">Richard Yohanes</p>
+              <p className="text-[10px] md:text-xs tracking-widest uppercase opacity-60 mb-2 font-bold">Video Director & Editor</p>
+              <p className="font-bold text-sm md:text-base">Michelle Aurelia</p>
             </div>
             <div>
-              <p className="text-[10px] md:text-xs tracking-widest uppercase opacity-60 mb-2 font-bold">Web Editor</p>
-              <p className="font-bold text-sm md:text-base">Mario Richie Lim</p>
+              <p className="text-[10px] md:text-xs tracking-widest uppercase opacity-60 mb-2 font-bold">Web Developer & Editor</p>
+              <p className="font-bold text-sm md:text-base">Muhammad Fabiansyah Abubakar</p>
             </div>
           </div>
           
