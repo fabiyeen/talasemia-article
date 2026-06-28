@@ -7,6 +7,7 @@ import { Eye } from "lucide-react";
 
 export default function ViewCounter() {
   const [views, setViews] = useState<number | null>(null);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     // Mitigate double-counting during strict mode/dev reloads for the same session
@@ -21,10 +22,12 @@ export default function ViewCounter() {
             // First time this session, increment and mark session
             try {
               await updateDoc(docRef, { views: increment(1) });
-            } catch (error: any) {
+            } catch (err: any) {
               // If document doesn't exist, create it
-              if (error.code === "not-found") {
+              if (err.code === "not-found") {
                 await setDoc(docRef, { views: 1 });
+              } else {
+                throw err;
               }
             }
             sessionStorage.setItem("page_viewed", "true");
@@ -37,30 +40,42 @@ export default function ViewCounter() {
           } else {
             setViews(1);
           }
-        } catch (error) {
-          console.error("Error updating views:", error);
+        } catch (err: any) {
+          console.error("Error updating views:", err);
+          setError("Failed to load");
         }
       };
 
       // Only attempt to update if Firebase env vars are configured
       if (process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID) {
         updateViews();
+      } else {
+        setError("Setup required");
       }
     }
   }, []);
 
-  if (views === null) {
-    // Render placeholder while fetching
+  if (error) {
     return (
-      <div className="flex items-center justify-center space-x-2 text-[var(--foreground)] mt-12 opacity-0">
+      <div className="flex items-center justify-center space-x-2 text-[var(--background)] mt-12 opacity-80 font-medium">
         <Eye className="w-5 h-5" />
-        <span>Total Views: ...</span>
+        <span>Views: {error}</span>
+      </div>
+    );
+  }
+
+  if (views === null) {
+    // Render visible fallback while fetching
+    return (
+      <div className="flex items-center justify-center space-x-2 text-[var(--background)] mt-12 opacity-80 font-medium">
+        <Eye className="w-5 h-5 animate-pulse" />
+        <span>Views: Loading...</span>
       </div>
     );
   }
 
   return (
-    <div className="flex items-center justify-center space-x-2 text-[var(--foreground)] mt-12 opacity-80 font-bold tracking-wide">
+    <div className="flex items-center justify-center space-x-2 text-[var(--background)] mt-12 opacity-90 font-bold tracking-wide">
       <Eye className="w-5 h-5" />
       <span>Total Views: {views}</span>
     </div>
