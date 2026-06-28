@@ -49,7 +49,7 @@ export default function Home() {
         <div className="relative w-full aspect-video rounded-xl overflow-hidden shadow-2xl bg-black/10">
           <iframe
             className="absolute top-0 left-0 w-full h-full"
-            src="https://www.youtube.com/watch?v=fzP_oM5wlCU"
+            src="https://www.youtube.com/embed/fzP_oM5wlCU"
             title="Video Interaktif Talasemia"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
