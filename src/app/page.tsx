@@ -2,6 +2,7 @@ import FadeIn from "@/components/FadeIn";
 import ImageCarousel from "@/components/ImageCarousel";
 import Image from "next/image";
 import ViewCounter from "@/components/ViewCounter";
+import ScrollToTop from "@/components/ScrollToTop";
 
 export default function Home() {
   const carouselImages = [
@@ -787,6 +788,8 @@ export default function Home() {
         </div>
       </FadeIn>
 
+      {/* Scroll to Top Button */}
+      <ScrollToTop />
     </main>
   );
 }
