@@ -119,17 +119,17 @@ export default function Home() {
             </p>
           </FadeIn>
 
-          <FadeIn className="mt-16 md:mt-24 mb-8 flex flex-col items-center">
-            <div className="relative rotate-[270deg] w-[75vw] md:w-[450px] rounded-xl overflow-hidden bg-black/10 shadow-lg">
+          <FadeIn className="my-12">
+            <div className="relative w-full rounded-xl overflow-hidden bg-black/10">
               <Image 
-                src="/images/obat-kelasi.png" 
+                src="/images/obat-kelasi.jpeg" 
                 alt="Obat kelasi besi dan vitamin Rani."
                 width={1200}
-                height={900}
+                height={800}
                 className="w-full h-auto object-contain"
               />
             </div>
-            <p className="text-sm md:text-base text-center mt-16 md:mt-24 opacity-75">
+            <p className="text-sm md:text-base text-center mt-4 opacity-75">
               Obat kelasi besi dan vitamin Rani.
             </p>
           </FadeIn>
