@@ -64,7 +64,7 @@ export default function Home() {
           </h2>
         </FadeIn>
         
-        <div className="space-y-6 text-lg md:text-xl leading-relaxed text-center">
+        <div className="space-y-6 text-lg md:text-xl leading-relaxed text-justify">
           <FadeIn>
             <p>
               Siang itu, di ruang talasemia RSCM Kiara, Rani terlihat tergesa-gesa menggeledah tas jinjing besarnya. Di dalamnya, ada belasan makan siang pesanan teman-temannya, pasien talasemia mayor yang tengah menjalankan transfusi darah di ruangan itu. Proses transfusi darah memakan waktu 6-8 jam untuk 2 kantong darah yang masuk ke tubuh mereka setiap sesinya. Rani paham sulitnya mencari makan dengan infus yang menancap di tangan seharian. Oleh karena itu, hampir setiap minggunya, Rani membuka Pre-Order makanan dari wirausahanya yang sudah dimulai sejak 2021. Di sisi lain, karena Rani juga merupakan pasien talasemia mayor yang setiap 6 minggu sekali melakukan transfusi darah di tempat itu.
@@ -147,12 +147,13 @@ export default function Home() {
           </FadeIn>
 
           <FadeIn className="my-12">
-            <div className="relative w-full aspect-video rounded-xl overflow-hidden bg-black/10">
+            <div className="relative w-full rounded-xl overflow-hidden bg-black/10">
               <Image 
                 src="/images/limpa-bengkak.jpg" 
                 alt="Ukuran limpa stadium 5 (17cm) Rani saat diangkat."
-                fill
-                className="object-cover rotate-90"
+                width={1200}
+                height={800}
+                className="w-full h-auto object-contain"
               />
             </div>
             <p className="text-sm md:text-base text-center mt-4 opacity-75">
@@ -216,7 +217,7 @@ export default function Home() {
           </h2>
         </FadeIn>
 
-        <div className="space-y-6 text-lg md:text-xl leading-relaxed text-center">
+        <div className="space-y-6 text-lg md:text-xl leading-relaxed text-justify">
           <FadeIn>
             <div className="clearfix">
               Tahun 2009, Andrew kecil terbaring di salah satu bilik ruang IGD di Jakarta Barat. Di usia yang baru 2 tahun, tubuh kecilnya harus menerima tusukan jarum suntik. Tiga hari kemudian, Andrew akan pulang dengan dua kantong darah yang mengisi tubuhnya dan diagnosa talasemia beta mayor. Kini, 17 
@@ -326,7 +327,7 @@ export default function Home() {
           </h2>
         </FadeIn>
 
-        <div className="space-y-6 text-lg md:text-xl leading-relaxed text-center">
+        <div className="space-y-6 text-lg md:text-xl leading-relaxed text-justify">
           <FadeIn>
             <p>
               Mencari tahu lebih mengenai talasemia secara medis, konteks penyebaran, dan situasinya di Indonesia, Prof. Dr. dr. Pustika Amalia Wahidiyat, Sp.A(K), Subsp. HO., lebih akrab dipanggil Prof. Lia, menjadi sosok yang tepat. Selama 30 tahun beliau mendedikasikan pelayanannya di bidang hematologi (penyakit darah) dan onkologi (kanker). Kini, Prof. Lia adalah salah satu pakar utama talasemia di Indonesia.
@@ -468,7 +469,7 @@ export default function Home() {
           </h2>
         </FadeIn>
 
-        <div className="space-y-6 text-lg md:text-xl leading-relaxed text-center">
+        <div className="space-y-6 text-lg md:text-xl leading-relaxed text-justify">
           <FadeIn className="mb-12">
             <div className="relative w-full aspect-video rounded-xl overflow-hidden bg-black/10">
               <Image 
@@ -531,7 +532,7 @@ export default function Home() {
           </h2>
         </FadeIn>
 
-        <div className="space-y-6 text-lg md:text-xl leading-relaxed text-center">
+        <div className="space-y-6 text-lg md:text-xl leading-relaxed text-justify">
           <FadeIn className="mb-12">
             <div className="relative w-full aspect-video rounded-xl overflow-hidden bg-black/10">
               <Image 
@@ -596,7 +597,7 @@ export default function Home() {
           </h2>
         </FadeIn>
 
-        <div className="space-y-6 text-lg md:text-xl leading-relaxed text-center">
+        <div className="space-y-6 text-lg md:text-xl leading-relaxed text-justify">
           <FadeIn className="mb-12">
             <div className="relative w-full aspect-video rounded-xl overflow-hidden bg-black/10">
               <Image 
@@ -696,7 +697,7 @@ export default function Home() {
           </h2>
         </FadeIn>
 
-        <div className="space-y-6 text-lg md:text-xl leading-relaxed text-center">
+        <div className="space-y-6 text-lg md:text-xl leading-relaxed text-justify">
           <FadeIn>
             <p>
               Pada akhirnya, hidup dengan talasemia mayor adalah tentang menerima seluruh keterbatasan menjadi bagian dari jati diri. Seperti pesan Prof. Lia untuk tidak menjadikan talasemia sebagai musuh, melainkan teman belajar berkembang. Bagi Rani, kuncinya adalah penerimaan secara medis. Cari tahu berbagai hal mengenai kondisimu, cari relasi, upaya yang akhirnya mempertemukannya dengan TM, pintu sosial dan pengembangan dirinya. Ketika satu pintu tertutup, cari dan buka pintu lainnya. Rani sadar la diberi sakit karena la mampu melaluinya. Oleh karena itu, berusahalah hingga batas akhir karena pasti akan ada jalannya.
