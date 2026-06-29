@@ -5,13 +5,6 @@ import ViewCounter from "@/components/ViewCounter";
 import ScrollToTop from "@/components/ScrollToTop";
 
 export default function Home() {
-  // TEMPORARY MAINTENANCE SCREEN
-  return (
-    <div className="flex h-screen w-full items-center justify-center bg-[#fdf2ac] text-[#500606]">
-      <h1 className="text-3xl font-bold font-poppins">Website sedang dalam perbaikan / Under Maintenance</h1>
-    </div>
-  );
-  
   const carouselImages = [
     { src: "/images/1.jpg", alt: "Potret 1" },
     { src: "/images/2.jpg", alt: "Potret 2" },
@@ -75,7 +68,7 @@ export default function Home() {
         <div className="space-y-6 text-lg md:text-xl leading-relaxed text-justify">
           <FadeIn>
             <p>
-              Siang itu, di ruang talasemia RSCM Kiara, Rani terlihat tergesa-gesa menggeledah tas jinjing besarnya. Di dalamnya, ada belasan makan siang pesanan teman-temannya, pasien talasemia mayor yang tengah menjalankan transfusi darah di ruangan itu. Proses transfusi darah memakan waktu 6-8 jam untuk 2 kantong darah yang masuk ke tubuh mereka setiap sesinya. Rani paham sulitnya mencari makan dengan infus yang menancap di tangan seharian. Oleh karena itu, hampir setiap minggunya, Rani membuka Pre-Order makanan dari wirausahanya yang sudah dimulai sejak 2021. Di sisi lain, karena Rani juga merupakan pasien talasemia mayor yang setiap 6 minggu sekali melakukan transfusi darah di tempat itu.
+              Siang itu, di ruang transfusi salah satu pusat talasemia terbesar di Jakarta, Rani terlihat tergesa-gesa menggeledah tas jinjing besarnya. Di dalamnya, ada belasan makan siang pesanan teman-temannya, pasien talasemia mayor yang tengah menjalankan transfusi darah di ruangan itu. Proses transfusi darah memakan waktu 6-8 jam untuk 2 kantong darah yang masuk ke tubuh mereka setiap sesinya. Rani paham sulitnya mencari makan dengan infus yang menancap di tangan seharian. Oleh karena itu, hampir setiap minggunya, Rani membuka Pre-Order makanan dari wirausahanya yang sudah dimulai sejak 2021. Di sisi lain, karena Rani juga merupakan pasien talasemia mayor yang setiap 6 minggu sekali melakukan transfusi darah di tempat itu.
             </p>
           </FadeIn>
 
@@ -138,7 +131,7 @@ export default function Home() {
               />
             </div>
             <p className="text-sm md:text-base text-center mt-4 opacity-75">
-              Obat kelasi besi dan vitamin Rani.
+              Obat yang dikonsumsi Rani.
             </p>
           </FadeIn>
 
@@ -150,7 +143,7 @@ export default function Home() {
 
           <FadeIn>
             <p>
-              Bahkan dengan konsistensi, tubuh Rani tidak selalu berkompromi. Pada tahun 2020, limpanya membengkak hingga stadium 5 akibat penumpukan zat besi yang membentuk batu empedu. Batu empedu ini menimbulkan rasa sakit luar biasa. Dengan ukuran limpa yang abnormal, Rani meminta tindakan operasi pengangkatan limpa (splenektomi). Rani menghabiskan tujuh hari persiapan operasi di ruang rawat inap sendiri. Tak ada satu pun pembesuk. Momen ini menjadi titik terendah Rani dalam perjalanan pengobatannya. Sebuah medan tempur pikiran yang mempertanyakan tubuhnya yang selalu gagal meski sudah dijaga mati-matian.
+              Bahkan dengan konsistensi, tubuh Rani tidak selalu berkompromi. Pada tahun 2020, limpanya membengkak hingga stadium 5 akibat penumpukan zat besi yang membentuk batu empedu. Batu empedu ini menimbulkan rasa sakit luar biasa. Dengan ukuran limpa yang abnormal, Rani meminta tindakan operasi pengangkatan limpa (splenektomi). Rani menghabiskan tujuh hari persiapan operasi di ruang rawat inap sendiri. Momen yang menciptakan medan tempur pikiran yang mempertanyakan tubuhnya yang selalu gagal meski sudah dijaga mati-matian. Titik terendah baginya.
             </p>
           </FadeIn>
 
@@ -185,7 +178,7 @@ export default function Home() {
               />
             </div>
             <p className="text-sm md:text-base text-center mt-4 opacity-75">
-              Rani dengan teman-teman pasien talasemia yang sedang menjenguk Rani pasca-splenektomi.
+              Rani dengan teman-teman pasien talasemia yang sedang menjenguk Rani pada sebelum operasinya.
             </p>
           </FadeIn>
 
@@ -541,20 +534,6 @@ export default function Home() {
         </FadeIn>
 
         <div className="space-y-6 text-lg md:text-xl leading-relaxed text-justify">
-          <FadeIn className="mb-12">
-            <div className="relative w-full aspect-video rounded-xl overflow-hidden bg-black/10">
-              <Image 
-                src="/images/ruang-rscm.jpeg" 
-                alt="Ruang thalassemia di RSCM Kiara."
-                fill
-                className="object-cover"
-              />
-            </div>
-            <p className="text-sm md:text-base text-center mt-4 opacity-75">
-              Ruang thalassemia di RSCM Kiara.
-            </p>
-          </FadeIn>
-
           <FadeIn>
             <p>
               Realitas talasemia di Indonesia terkadang juga ditentukan dari konteks geografi dan tempat para pengidap tinggal. Rani merasa sudah cukup berpindah rumah sakit sekitar Jakarta. Oleh karena itu, ketika membutuhkan sosok yang tepat untuk bertanya relasi dan berbagai prosedur hingga SOP berobat di berbagai rumah sakit, Rani mungkin menjadi orang yang tepat. Namun berdasarkan pengalamannya, di Jakarta sendiri, standar penanganan belum setara. Contohnya standar kantong darah yang diberikan faskes satu dengan lainnya yang masih berbeda-beda. Jenis obat kelasi besi yang tersedia pun juga masih berbeda. Jika di pusat kota berkembang seperti Jakarta saja belum memiliki pemenuhan standar yang seragam, bagaimana realitanya di luar sana?
@@ -648,7 +627,7 @@ export default function Home() {
 
           <FadeIn>
             <p>
-              Sebelum tenggelam, semboyan kebiasaan kecil pasien talasemia di RSCM Kiara "Satu buka obat, semua buka obat", pertama kali tercipta. Mereka saling memaksa disiplin dan semangat berobat di tengah duka. Upaya agar tidak mengulang kehilangan teman seperjuangan karena abai.
+              Sebelum tenggelam, semboyan kebiasaan kecil pasien talasemia di pusat talasemia itu "Satu buka obat, semua buka obat", pertama kali tercipta. Mereka saling memaksa disiplin dan semangat berobat di tengah duka. Upaya agar tidak mengulang kehilangan teman seperjuangan karena abai.
             </p>
           </FadeIn>
 

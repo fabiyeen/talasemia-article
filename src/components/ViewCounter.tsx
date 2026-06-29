@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import { doc, getDoc, updateDoc, setDoc, increment } from "firebase/firestore";
 import { db } from "@/lib/firebase";
-import { Eye } from "lucide-react";
 
 export default function ViewCounter() {
   const [views, setViews] = useState<number | null>(null);
@@ -55,29 +54,5 @@ export default function ViewCounter() {
     }
   }, []);
 
-  if (error) {
-    return (
-      <div className="flex items-center justify-center space-x-2 text-[var(--background)] mt-12 opacity-80 font-medium">
-        <Eye className="w-5 h-5" />
-        <span>Views: {error}</span>
-      </div>
-    );
-  }
-
-  if (views === null) {
-    // Render visible fallback while fetching
-    return (
-      <div className="flex items-center justify-center space-x-2 text-[var(--background)] mt-12 opacity-80 font-medium">
-        <Eye className="w-5 h-5 animate-pulse" />
-        <span>Reads: Loading...</span>
-      </div>
-    );
-  }
-
-  return (
-    <div className="flex items-center justify-center space-x-2 text-[var(--background)] mt-12 opacity-90 font-bold tracking-wide">
-      <Eye className="w-5 h-5" />
-      <span>Total Reads: {views}</span>
-    </div>
-  );
+  return null;
 }
