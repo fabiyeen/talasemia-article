@@ -5,6 +5,13 @@ import ViewCounter from "@/components/ViewCounter";
 import ScrollToTop from "@/components/ScrollToTop";
 
 export default function Home() {
+  // TEMPORARY MAINTENANCE SCREEN
+  return (
+    <div className="flex h-screen w-full items-center justify-center bg-[#fdf2ac] text-[#500606]">
+      <h1 className="text-3xl font-bold font-poppins">Website sedang dalam perbaikan / Under Maintenance</h1>
+    </div>
+  );
+  
   const carouselImages = [
     { src: "/images/1.jpg", alt: "Potret 1" },
     { src: "/images/2.jpg", alt: "Potret 2" },
