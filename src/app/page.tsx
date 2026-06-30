@@ -40,7 +40,7 @@ export default function Home() {
           Belum lama ini, Indonesia dikabarkan krisis BBM. Pernahkah timbul kekhawatiran jika BBM habis sepenuhnya? Seluruh transportasi berbahan bakar minyak tak lagi berfungsi. Mati total. Bagaimana jika tubuh manusia diibaratkan seperti mesin? Layaknya kendaraan yang perlu isi ulang BBM setiap minggu, manusia perlu diisi bahan bakarnya sendiri berupa darah.
         </p>
         <p>
-          <strong>Talasemia mayor.</strong> Itulah kondisi kelainan darah yang mengharuskan manusia melakukan "isi ulang darah" atau transfusi darah secara berkala seumur hidupnya. Ini adalah sebuah kisah nyata bagi kurang lebih 150.000 orang di seluruh Indonesia.
+          <strong>Talasemia mayor.</strong> Itulah kondisi kelainan darah yang mengharuskan manusia melakukan "isi ulang darah" atau transfusi darah secara berkala seumur hidupnya. Ini adalah sebuah kisah nyata bagi kurang lebih 15.000 orang di seluruh Indonesia.
         </p>
       </FadeIn>
 
