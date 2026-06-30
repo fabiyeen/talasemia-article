@@ -725,6 +725,19 @@ export default function Home() {
         </div>
       </section>
 
+      {/* FINAL SUMMARY INFOGRAPHIC */}
+      <FadeIn className="my-16 md:my-24 max-w-5xl mx-auto px-4 md:px-0">
+        <div className="relative w-full rounded-xl overflow-hidden">
+          <Image 
+            src="/images/INFOGRAFIK.png" 
+            alt="Infografik Ringkasan Talasemia"
+            width={1200}
+            height={2400}
+            className="w-full h-auto object-contain"
+          />
+        </div>
+      </FadeIn>
+
       {/* FOOTER / CREDITS */}
       <FadeIn className="mt-32 mb-16 max-w-4xl mx-auto px-4 md:px-0">
         <div className="bg-[var(--foreground)] text-[var(--background)] rounded-3xl p-8 md:p-12">
